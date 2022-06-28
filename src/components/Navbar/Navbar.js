@@ -35,7 +35,6 @@ const Navbar = () => {
 
   return (
     <>
-      =
       <NavbarSection className={navChangeColor ? "navbar active" : "navbar"}>
         <NavContainer>
           <Navlogo to="/" onClick={handleToggleHome}>
