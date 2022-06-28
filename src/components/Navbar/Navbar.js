@@ -65,10 +65,10 @@ const Navbar = () => {
           </NavMenu>
           <NavMenuRight>
             <NavItemLogin>
-              <NavLoginLink to="/login">Log In</NavLoginLink>
+              <NavLoginLink to="/">Log In</NavLoginLink>
             </NavItemLogin>
             <Btn>
-              <NavSignupLink to="/signup">Sign Up</NavSignupLink>
+              <NavSignupLink to="/">Sign Up</NavSignupLink>
             </Btn>
           </NavMenuRight>
         </NavContainer>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Grid } from "@mui/material";
 
 export const Section = styled.div`
-  background: #f7f2f3;
+  background: #faf7f7;
   padding: 130px 0 130px 0;
   color: #000;
 `;
@@ -17,7 +17,7 @@ export const BestSection = styled.div`
   display: flex;
   flex-direction: column;
   padding: 100px 0 80px;
-  background: #f7f2f3;
+  background: #faf7f7;
 `;
 
 export const ProductRow = styled.div`

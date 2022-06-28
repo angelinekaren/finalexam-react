@@ -36,7 +36,7 @@ const PromoSection = () => {
                   </Subtitle>
                   <BtnWrapper>
                     <LearnBtn>
-                      <LearnLink to="aboutus">Order now</LearnLink>
+                      <LearnLink to="/">Order now</LearnLink>
                     </LearnBtn>
                   </BtnWrapper>
                 </TextWrapper>

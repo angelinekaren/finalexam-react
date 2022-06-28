@@ -1,7 +1,7 @@
 import React from "react";
 import springDrinks from "../../images/spring_drinks.png";
 import americano from "../../images/americano.jpg";
-import caramelMacchiato from "../../images/caramel_macchiato.jpg";
+import caramelMacchiato from "../../images/caramel_macchiato.jpeg";
 import latte from "../../images/latte.jpg";
 import {
   Fade,
@@ -66,7 +66,7 @@ const Products = () => {
                   </Subtitle>
                   <BtnWrapper>
                     <LearnBtn>
-                      <LearnLink to="aboutus">Order now</LearnLink>
+                      <LearnLink to="/">Order now</LearnLink>
                     </LearnBtn>
                   </BtnWrapper>
                 </TextWrapper>
@@ -80,65 +80,71 @@ const Products = () => {
               <HeadingLine />
               <ContactHeading>Our best menu</ContactHeading>
             </HeadingWrapper>
-            <Wrapper>
-              <Card sx={{ padding: "0 20px" }}>
-                <CardMedia
-                  component="img"
-                  image={caramelMacchiato}
-                  height="300"
-                  width="300"
-                />
-                <CardContent>
-                  <Typography component="h2" variant="h5">
-                    Caramel Macchiato
-                  </Typography>
-                  <Typography component="h5" gutterBottom>
-                    Rp. 40.000
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button fullwidth>Order Now</Button>
-                </CardActions>
-              </Card>
-              <Card>
-                <CardMedia
-                  image={latte}
-                  component="img"
-                  height="300"
-                  width="300"
-                />
-                <CardContent>
-                  <Typography component="h2" variant="h5">
-                    Vanilla Latte
-                  </Typography>
-                  <Typography component="h5" gutterBottom>
-                    Rp. 45.000
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button fullwidth>Order Now</Button>
-                </CardActions>
-              </Card>
-              <Card>
-                <CardMedia
-                  src={americano}
-                  component="img"
-                  height="300"
-                  width="300"
-                />
-                <CardContent>
-                  <Typography component="h2" variant="h5">
-                    Americano
-                  </Typography>
-                  <Typography component="h5" gutterBottom>
-                    Rp. 30.000
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button fullwidth>Order Now</Button>
-                </CardActions>
-              </Card>
-            </Wrapper>
+            <GridCustom container alignItems="stretch" spacing={3}>
+              <Grid item xs={12} sm={6} md={4}>
+                <Card sx={{ padding: "0 20px" }}>
+                  <CardMedia
+                    component="img"
+                    image={caramelMacchiato}
+                    height="300"
+                    width="300"
+                  />
+                  <CardContent>
+                    <Typography component="h2" variant="h5">
+                      Caramel Macchiato
+                    </Typography>
+                    <Typography component="h5" gutterBottom>
+                      Rp. 40.000
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button fullwidth>Order Now</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Card>
+                  <CardMedia
+                    image={latte}
+                    component="img"
+                    height="300"
+                    width="300"
+                  />
+                  <CardContent>
+                    <Typography component="h2" variant="h5">
+                      Vanilla Latte
+                    </Typography>
+                    <Typography component="h5" gutterBottom>
+                      Rp. 45.000
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button fullwidth>Order Now</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Card>
+                  <CardMedia
+                    src={americano}
+                    component="img"
+                    height="300"
+                    width="300"
+                  />
+                  <CardContent>
+                    <Typography component="h2" variant="h5">
+                      Americano
+                    </Typography>
+                    <Typography component="h5" gutterBottom>
+                      Rp. 30.000
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button fullwidth>Order Now</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </GridCustom>
           </Container>
         </BestSection>
       </Section>

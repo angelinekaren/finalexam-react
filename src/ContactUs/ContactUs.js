@@ -35,7 +35,9 @@ const ContactUs = () => {
           <HeadingWrapper>
             <HeadingLine />
             <ContactHeading>Need help?</ContactHeading>
-            <ContactSubheading>Freely contact us</ContactSubheading>
+            <ContactSubheading>
+              CoffeeMe is always ready to answer your questions
+            </ContactSubheading>
           </HeadingWrapper>
           <WelcomeRow>
             <WelcomeColumn>
@@ -115,10 +117,11 @@ const ContactUs = () => {
                       <TextField
                         fullWidth
                         multiline
-                        className="listingName-input"
+                        rows={4}
+                        className="feedback-input"
                         required
                         size="small"
-                        id="listingName"
+                        id="feedback"
                         label="Your feedback"
                         variant="outlined"
                         sx={{ marginTop: "1.2rem" }}
